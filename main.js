@@ -37,7 +37,7 @@ window.onload = function () {
         $('#test2').html('');
         $('#test3').html('');
         $('#test4').html('YES!');
-        $("#test4").css({'transition': 'all 1s ease-in-out', 'transform': 'scale(2)'});
+        $("#test4").css({'transition': 'all 1s ease-in-out', 'transform': 'scale(5)'});
         for (var i = 0; i < 9; i++) {
             periods[i].html('100.000%');
             periods[i].attr('class', 'green-text text-darken-2');
