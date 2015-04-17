@@ -1,3 +1,4 @@
+periods = [$('#p1'),$('#p2'),$('#p3'),$('#p4'),$('#p5'),$('#p6'),$('#p7'),$('#p8'),$('#p9')]; 
 window.setInterval(function(){
     var current_time = new Date();
     var current_time_modified = current_time.getHours() * 60 + current_time.getMinutes() + current_time.getSeconds() / 60.0 + current_time.getMilliseconds() / 1000.0 / 60.0 - 460;
@@ -13,8 +14,6 @@ window.setInterval(function(){
             $('#test3').html('No :(');
         }
         $('#test4').html();
-        
-        var periods = [$('#p1'),$('#p2'),$('#p3'),$('#p4'),$('#p5'),$('#p6'),$('#p7'),$('#p8'),$('#p9')];  
         for (var i = 0; i < 9; i++) {
             if (current_time_modified > 47 * i) {
                 var p1 = (current_time_modified - 47 * i) / 43 * 100;
@@ -37,5 +36,9 @@ window.setInterval(function(){
         $('#test2').html('');
         $('#test3').html('');
         $('#test4').html('YES!');
+        for (var i = 0; i < 9; i++) {
+            periods[i].html('100.000%');
+            periods[i].attr('class', 'green-text text-darken-2');
+        }
     }
 }, 10);
