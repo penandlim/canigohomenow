@@ -1,4 +1,9 @@
 #background {
   background-color: #e5e5e5;
-    overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+body { 
+  overflow-x:hidden;  
+  background-color: #e5e5e5;
 }
