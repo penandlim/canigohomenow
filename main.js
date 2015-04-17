@@ -1,5 +1,5 @@
-var periods = [$('#p1'),$('#p2'),$('#p3'),$('#p4'),$('#p5'),$('#p6'),$('#p7'),$('#p8'),$('#p9')];
 window.setInterval(function(){
+    var periods = [$('#p1'),$('#p2'),$('#p3'),$('#p4'),$('#p5'),$('#p6'),$('#p7'),$('#p8'),$('#p9')];
     var current_time = new Date();
     var current_time_modified = current_time.getHours() * 60 + current_time.getMinutes() + current_time.getSeconds() / 60.0 + current_time.getMilliseconds() / 1000.0 / 60.0 - 460;
     var percent_time = current_time_modified / 419 * 100;
